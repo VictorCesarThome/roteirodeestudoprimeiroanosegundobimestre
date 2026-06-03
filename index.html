@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0059)file:///C:/Users/Victor/Downloads/Roteiro_Interativo_1.html -->
+<!-- saved from url=(0059)file:///C:/Users/Victor/Downloads/Roteiro_Interativo_3.html -->
 <html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Roteiro de Estudo · Plano Inclinado e Atrito</title>
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./Roteiro de Estudo · Plano Inclinado e Atrito_files/css2" rel="stylesheet">
 <style>
   :root{
     --ink:#0a0e2a; --ink-2:#121a44; --panel:#161f52;
@@ -22,7 +19,7 @@
   [hidden]{display:none!important}
   html{scroll-behavior:smooth}
   body{
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Space Grotesk','Segoe UI',system-ui,sans-serif;
     background:var(--ink);
     color:var(--txt);
     line-height:1.65;
@@ -58,12 +55,12 @@
   .logo-badge img{height:62px;display:block}
   @keyframes dropIn{from{opacity:0;transform:translateY(-30px) scale(.9)}to{opacity:1;transform:none}}
   .eyebrow{
-    margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:.78rem;
+    margin-top:26px;font-family:'JetBrains Mono','Consolas',monospace;font-size:.78rem;
     letter-spacing:.32em;text-transform:uppercase;color:var(--cyan);
     animation:fadeUp .8s .2s both;
   }
   h1.title{
-    font-family:'Fraunces',serif;font-weight:900;line-height:1.02;
+    font-family:'Fraunces','Georgia',serif;font-weight:900;line-height:1.02;
     font-size:clamp(2.6rem,7vw,5rem);margin:14px 0 8px;
     background:linear-gradient(120deg,#fff 20%,var(--cyan) 55%,var(--violet) 90%);
     -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
@@ -88,11 +85,11 @@
   section{position:relative;z-index:2;padding:46px 0}
   .sec-head{display:flex;align-items:center;gap:16px;margin-bottom:28px}
   .sec-num{
-    font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.85rem;
+    font-family:'JetBrains Mono','Consolas',monospace;font-weight:700;font-size:.85rem;
     color:var(--ink);background:var(--cyan);padding:6px 12px;border-radius:8px;
     box-shadow:0 0 24px -4px var(--cyan);
   }
-  .sec-head h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.6rem,4vw,2.4rem);color:#fff}
+  .sec-head h2{font-family:'Fraunces','Georgia',serif;font-weight:600;font-size:clamp(1.6rem,4vw,2.4rem);color:#fff}
   .sec-line{flex:1;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
 
   /* reveal on scroll */
@@ -109,10 +106,10 @@
   .card:hover{transform:translateY(-6px);border-color:rgba(34,211,238,.5);box-shadow:var(--shadow)}
   .card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent,var(--cyan))}
   .card .ico{font-size:1.7rem;margin-bottom:10px;display:block}
-  .card h3{font-family:'Fraunces',serif;font-size:1.25rem;color:#fff;margin-bottom:8px;font-weight:600}
+  .card h3{font-family:'Fraunces','Georgia',serif;font-size:1.25rem;color:#fff;margin-bottom:8px;font-weight:600}
   .card p{color:var(--txt-dim);font-size:.96rem}
   .card .eq{
-    margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:.95rem;
+    margin-top:14px;font-family:'JetBrains Mono','Consolas',monospace;font-size:.95rem;
     color:var(--accent,var(--cyan));background:rgba(0,0,0,.25);padding:10px 14px;border-radius:10px;
     border-left:3px solid var(--accent,var(--cyan));
   }
@@ -125,25 +122,25 @@
     border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px;margin-top:8px;
     box-shadow:var(--shadow);
   }
-  .demo-card h3{font-family:'Fraunces',serif;font-size:1.4rem;color:#fff;margin-bottom:6px}
+  .demo-card h3{font-family:'Fraunces','Georgia',serif;font-size:1.4rem;color:#fff;margin-bottom:6px}
   .demo-card .hint{color:var(--txt-dim);font-size:.94rem;margin-bottom:18px}
   .demo-stage{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center}
   .ctrl-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;justify-content:center}
   .pill-btn{
-    font-family:'Space Grotesk';font-weight:500;font-size:.9rem;cursor:pointer;
+    font-family:'Space Grotesk','Segoe UI',system-ui,sans-serif;font-weight:500;font-size:.9rem;cursor:pointer;
     padding:9px 16px;border-radius:100px;border:1px solid rgba(255,255,255,.18);
     background:rgba(255,255,255,.04);color:var(--txt);transition:all .25s;display:inline-flex;gap:7px;align-items:center;
   }
   .pill-btn:hover{border-color:var(--cyan);color:#fff;background:rgba(34,211,238,.12)}
   .pill-btn.active{background:var(--cyan);color:var(--ink);border-color:var(--cyan);font-weight:700}
   .slider-wrap{display:flex;align-items:center;gap:14px;margin-top:22px;flex-wrap:wrap;justify-content:center}
-  .slider-wrap label{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--txt-dim)}
+  .slider-wrap label{font-family:'JetBrains Mono','Consolas',monospace;font-size:.85rem;color:var(--txt-dim)}
   input[type=range]{-webkit-appearance:none;appearance:none;width:220px;height:6px;border-radius:5px;
     background:linear-gradient(90deg,var(--cyan),var(--violet));outline:none}
   input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;
     background:#fff;cursor:pointer;box-shadow:0 0 14px var(--cyan);border:3px solid var(--cyan)}
   input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;cursor:pointer;border:3px solid var(--cyan)}
-  .readout{font-family:'JetBrains Mono',monospace;color:var(--amber);font-size:1rem;min-width:120px}
+  .readout{font-family:'JetBrains Mono','Consolas',monospace;color:var(--amber);font-size:1rem;min-width:120px}
 
   /* ---------- QUESTION CARDS ---------- */
   .q-card{
@@ -154,17 +151,17 @@
   }
   .q-card::after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;
     background:radial-gradient(circle,var(--qc,var(--cyan)),transparent 70%);opacity:.10;top:-60px;right:-40px}
-  .q-tag{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;
+  .q-tag{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono','Consolas',monospace;
     font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--qc,var(--cyan));
     background:rgba(255,255,255,.06);padding:5px 12px;border-radius:8px;margin-bottom:14px;border:1px solid rgba(255,255,255,.08)}
-  .q-num{font-family:'Fraunces',serif;font-weight:900;color:var(--qc,var(--cyan));font-size:1.05rem}
+  .q-num{font-family:'Fraunces','Georgia',serif;font-weight:900;color:var(--qc,var(--cyan));font-size:1.05rem}
   .q-text{font-size:1.06rem;color:var(--txt);margin-bottom:6px}
-  .q-data{font-family:'JetBrains Mono',monospace;font-size:.88rem;color:var(--txt-dim);
+  .q-data{font-family:'JetBrains Mono','Consolas',monospace;font-size:.88rem;color:var(--txt-dim);
     background:rgba(0,0,0,.22);padding:10px 14px;border-radius:10px;margin:14px 0;border-left:3px solid var(--qc,var(--cyan))}
 
   .solve-zone{margin-top:18px}
   .reveal-btn{
-    font-family:'Space Grotesk';font-weight:700;font-size:1rem;cursor:pointer;
+    font-family:'Space Grotesk','Segoe UI',system-ui,sans-serif;font-weight:700;font-size:1rem;cursor:pointer;
     padding:14px 26px;border-radius:14px;border:none;color:var(--ink);
     background:linear-gradient(120deg,var(--qc,var(--cyan)),#fff);
     box-shadow:0 8px 30px -8px var(--qc,var(--cyan));transition:transform .25s,box-shadow .25s;
@@ -175,20 +172,21 @@
 
   .steps{margin-top:18px;display:flex;flex-direction:column;gap:14px}
   .step{
-    opacity:0;max-height:0;overflow:hidden;
+    display:none;
+    opacity:0;
     transform:translateY(16px);
-    transition:opacity .55s ease,transform .55s ease,max-height .6s ease,margin .4s ease,padding .4s ease;
+    transition:opacity .5s ease,transform .5s ease;
     background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);
-    border-radius:16px;padding:0 20px;border-left:4px solid var(--qc,var(--cyan));
+    border-radius:16px;padding:18px 20px;border-left:4px solid var(--qc,var(--cyan));
   }
-  .step.show{opacity:1;max-height:600px;transform:none;padding:18px 20px}
-  .step .s-label{font-family:'JetBrains Mono',monospace;font-size:.74rem;letter-spacing:.14em;
+  .step.show{display:block;opacity:1;transform:none}
+  .step .s-label{font-family:'JetBrains Mono','Consolas',monospace;font-size:.74rem;letter-spacing:.14em;
     text-transform:uppercase;color:var(--qc,var(--cyan));margin-bottom:8px;display:flex;align-items:center;gap:8px}
   .step .s-label .n{background:var(--qc,var(--cyan));color:var(--ink);width:22px;height:22px;border-radius:50%;
     display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem}
   .step p{color:var(--txt);font-size:1rem;margin-bottom:0}
   .step .math{
-    font-family:'JetBrains Mono',monospace;font-size:1.02rem;color:#fff;
+    font-family:'JetBrains Mono','Consolas',monospace;font-size:1.02rem;color:#fff;
     background:rgba(0,0,0,.32);padding:12px 16px;border-radius:10px;margin-top:10px;
     overflow-x:auto;white-space:nowrap;
   }
@@ -198,19 +196,19 @@
   .step.final-step .s-label .n{background:var(--lime)}
   .answer-chip{
     display:inline-flex;align-items:center;gap:10px;margin-top:10px;
-    font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--ink);
+    font-family:'JetBrains Mono','Consolas',monospace;font-weight:700;font-size:1.1rem;color:var(--ink);
     background:var(--lime);padding:10px 18px;border-radius:100px;box-shadow:0 0 24px -4px var(--lime)}
 
   .step-nav{margin-top:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
   .next-btn{
-    font-family:'Space Grotesk';font-weight:700;font-size:.95rem;cursor:pointer;
+    font-family:'Space Grotesk','Segoe UI',system-ui,sans-serif;font-weight:700;font-size:.95rem;cursor:pointer;
     padding:12px 22px;border-radius:12px;border:1px solid var(--qc,var(--cyan));
     background:rgba(34,211,238,.1);color:#fff;transition:all .25s;display:inline-flex;gap:8px;align-items:center}
   .next-btn:hover{background:var(--qc,var(--cyan));color:var(--ink)}
   .next-btn:disabled{opacity:.3;cursor:not-allowed;background:transparent}
-  .progress{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--txt-dim)}
+  .progress{font-family:'JetBrains Mono','Consolas',monospace;font-size:.82rem;color:var(--txt-dim)}
   .progress b{color:var(--qc,var(--cyan))}
-  .restart{font-family:'Space Grotesk';font-size:.85rem;color:var(--txt-dim);background:none;border:none;
+  .restart{font-family:'Space Grotesk','Segoe UI',system-ui,sans-serif;font-size:.85rem;color:var(--txt-dim);background:none;border:none;
     cursor:pointer;text-decoration:underline;text-underline-offset:3px}
   .restart:hover{color:var(--cyan)}
 
@@ -256,25 +254,25 @@
   <p class="lead reveal in">Quando um corpo está sobre uma rampa, o <b>peso</b> (que aponta sempre para baixo) é decomposto em duas direções: uma <b>paralela</b> ao plano, que tende a fazer o corpo descer, e uma <b>perpendicular</b>, que a superfície equilibra. Entender essa decomposição é a chave para todos os problemas.</p>
 
   <div class="theory-grid">
-    <div class="card reveal" style="--accent:var(--cyan)">
+    <div class="card reveal in" style="--accent:var(--cyan)">
       <span class="ico">⬇️</span>
       <h3>Peso (P)</h3>
       <p>A força da gravidade sobre o corpo. Aponta verticalmente para baixo, independente da inclinação.</p>
       <div class="eq">P = m · g</div>
     </div>
-    <div class="card reveal" style="--accent:var(--amber)">
+    <div class="card reveal in" style="--accent:var(--amber)">
       <span class="ico">↘️</span>
       <h3>Componente paralela</h3>
       <p>A "fatia" do peso que puxa o corpo rampa abaixo. É a responsável por acelerar a descida.</p>
       <div class="eq">Pₓ = P · sen θ</div>
     </div>
-    <div class="card reveal" style="--accent:var(--violet)">
+    <div class="card reveal in" style="--accent:var(--violet)">
       <span class="ico">↗️</span>
       <h3>Normal (N)</h3>
       <p>A superfície empurra o corpo para fora. Equilibra a componente perpendicular do peso.</p>
       <div class="eq">N = P · cos θ</div>
     </div>
-    <div class="card reveal" style="--accent:var(--magenta)">
+    <div class="card reveal in" style="--accent:var(--magenta)">
       <span class="ico">🛑</span>
       <h3>Atrito (Fat)</h3>
       <p>Opõe-se ao movimento. Depende da normal e do coeficiente de atrito entre as superfícies.</p>
@@ -282,17 +280,17 @@
     </div>
   </div>
 
-  <p class="lead reveal" style="margin-top:34px">Juntando tudo com a <b>2ª Lei de Newton</b> (F = m·a) na direção do plano, chegamos às situações típicas: descida <b>sem atrito</b>, descida <b>com atrito</b>, e <b>equilíbrio</b> (velocidade constante, quando a resultante é zero).</p>
+  <p class="lead reveal in" style="margin-top:34px">Juntando tudo com a <b>2ª Lei de Newton</b> (F = m·a) na direção do plano, chegamos às situações típicas: descida <b>sem atrito</b>, descida <b>com atrito</b>, e <b>equilíbrio</b> (velocidade constante, quando a resultante é zero).</p>
 </section>
 
 <!-- ===================== DEMO INTERATIVA ===================== -->
 <section>
-  <div class="sec-head reveal">
+  <div class="sec-head reveal in">
     <span class="sec-num">VISUAL</span>
     <h2>Laboratório de forças</h2>
     <span class="sec-line"></span>
   </div>
-  <div class="demo-card reveal">
+  <div class="demo-card reveal in">
     <h3>Arraste o ângulo e veja as forças mudarem</h3>
     <p class="hint">As setas representam as forças sobre o bloco. Aumente a inclinação e observe como a componente paralela (amarela) cresce enquanto a normal (roxa) diminui.</p>
     <div class="demo-stage">
@@ -311,11 +309,15 @@
     <circle cx="224.2" cy="208.3582291370148" r="3" fill="#fff"></circle>
     <line x1="224.2" y1="208.3582291370148" x2="224.2" y2="278.3582291370148" stroke="#ffffff" stroke-width="3" stroke-linecap="round"></line>
       <path d="M224.2,278.3582291370148 L220.69523491922214,270.06868019098886 L227.70476508077783,270.06868019098886 Z" fill="#ffffff"></path>
-      <text x="216.2" y="292.3582291370148" fill="#ffffff" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="end">P</text><line x1="224.2" y1="208.3582291370148" x2="254.51088913245533" y2="155.8582291370148" stroke="#a78bfa" stroke-width="3.5" stroke-linecap="round"></line>
-      <path d="M254.51088913245533,155.8582291370148 L253.4013302536926,164.78957165057673 L247.3308990651921,161.2848065697989 Z" fill="#a78bfa"></path>
-      <text x="262.5108891324553" y="149.8582291370148" fill="#a78bfa" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="start">N</text><line x1="224.2" y1="208.3582291370148" x2="254.51088913245533" y2="225.8582291370148" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"></line>
+      <text x="216.2" y="292.3582291370148" fill="#ffffff" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="end">P</text><line x1="224.2" y1="208.3582291370148" x2="254.51088913245533" y2="225.8582291370148" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"></line>
       <path d="M254.51088913245533,225.8582291370148 L245.5795466188934,224.74867025825205 L249.08431169967125,218.67823906975158 Z" fill="#fbbf24"></path>
-      <text x="262.5108891324553" y="239.8582291370148" fill="#fbbf24" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="start">Pₓ</text>
+      <text x="262.5108891324553" y="239.8582291370148" fill="#fbbf24" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="start">Pₓ</text><line x1="224.2" y1="208.3582291370148" x2="202.98237760728125" y2="196.1082291370148" stroke="#f472b6" stroke-width="3.5" stroke-linecap="round"></line>
+      <path d="M202.98237760728125,196.1082291370148 L211.91372012084318,197.21778801577756 L208.40895504006534,203.28821920427802 Z" fill="#f472b6"></path>
+      <text x="194.98237760728125" y="190.1082291370148" fill="#f472b6" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="end">Fat</text><line x1="224.2" y1="208.3582291370148" x2="254.51088913245533" y2="155.8582291370148" stroke="#a78bfa" stroke-width="3.5" stroke-linecap="round"></line>
+      <path d="M254.51088913245533,155.8582291370148 L253.4013302536926,164.78957165057673 L247.3308990651921,161.2848065697989 Z" fill="#a78bfa"></path>
+      <text x="262.5108891324553" y="149.8582291370148" fill="#a78bfa" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="start">N</text><line x1="224.2" y1="208.3582291370148" x2="193.88911086754464" y2="260.8582291370148" stroke="#5b7fd4" stroke-width="3" stroke-linecap="round"></line>
+      <path d="M193.88911086754464,260.8582291370148 L194.9986697463074,251.92688662345287 L201.06910093480786,255.43165170423072 Z" fill="#5b7fd4"></path>
+      <text x="185.88911086754464" y="274.8582291370148" fill="#5b7fd4" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="end">Pᵧ</text>
   </svg>
     </div>
     <div class="slider-wrap">
@@ -324,59 +326,59 @@
       <span class="readout" id="angleOut">θ = 30°</span>
     </div>
     <div class="ctrl-row">
-      <button class="pill-btn active" data-force="all">Todas as forças</button>
+      <button class="pill-btn" data-force="all">Todas as forças</button>
       <button class="pill-btn" data-force="components">Só componentes</button>
-      <button class="pill-btn" data-force="friction">Mostrar atrito</button>
+      <button class="pill-btn active" data-force="friction">Mostrar atrito</button>
     </div>
   </div>
 </section>
 
 <!-- ===================== QUESTÕES ===================== -->
 <section>
-  <div class="sec-head reveal">
+  <div class="sec-head reveal in">
     <span class="sec-num">PRÁTICA</span>
     <h2>Questões resolvidas passo a passo</h2>
     <span class="sec-line"></span>
   </div>
-  <p class="lead reveal">Leia o enunciado, tente resolver sozinho e depois clique em <b>Resolver</b>. Cada passo aparece logo abaixo — avance no seu ritmo, sem precisar rolar para cima.</p>
+  <p class="lead reveal in">Leia o enunciado, tente resolver sozinho e depois clique em <b>Resolver</b>. Cada passo aparece logo abaixo — avance no seu ritmo, sem precisar rolar para cima.</p>
 
-  <div id="questions"><div class="q-card reveal" style="--qc: #22d3ee;">
+  <div id="questions"><div class="q-card reveal in" style="--qc: #22d3ee;">
     <div class="q-tag">Plano sem atrito</div>
     <div class="q-text"><span class="q-num">Questão 1.</span> Um corpo de massa 2,0 kg é abandonado, a partir do repouso, no alto de uma rampa inclinada de 53° em relação à horizontal. Desprezando-se os atritos, determine o módulo da aceleração do corpo ao descer a rampa.</div>
     <div class="q-data">sen 53° = 0,8 · cos 53° = 0,6 · g = 10 m/s²</div>
     <div class="solve-zone">
-      <button class="reveal-btn">⚡ Resolver passo a passo</button>
-      <div class="steps" hidden="">
-    <div class="step " data-step="0">
+      <button class="reveal-btn" style="display: none;">⚡ Resolver passo a passo</button>
+      <div class="steps">
+    <div class="step show" data-step="0">
       <div class="s-label"><span class="n">1</span>Forças em jogo</div>
       <p>Sem atrito, a única força que acelera o corpo é a componente do peso paralela ao plano (Pₓ). A normal e a componente perpendicular se cancelam.</p>
       <div class="math">Pₓ = P · sen θ = m · g · sen 53°</div>
       
     </div>
-    <div class="step " data-step="1">
+    <div class="step show" data-step="1">
       <div class="s-label"><span class="n">2</span>2ª Lei de Newton</div>
       <p>Na direção do movimento, a resultante é Pₓ. Igualamos a m·a:</p>
       <div class="math">m · g · sen 53° = m · a</div>
       
     </div>
-    <div class="step " data-step="2">
+    <div class="step show" data-step="2">
       <div class="s-label"><span class="n">3</span>A massa se cancela</div>
       <p>Como m aparece dos dois lados, ela some — a aceleração não depende da massa:</p>
       <div class="math">a = g · sen 53°</div>
       
     </div>
-    <div class="step final-step" data-step="3">
+    <div class="step final-step show" data-step="3">
       <div class="s-label"><span class="n">4</span>Resultado</div>
       <p>Substituindo os valores:</p>
       <div class="math">a = 10 · <span class="hl">0,8</span> = 8,0 m/s²</div>
       <div class="answer-chip">✓ a = 8,0 m/s²</div>
     </div></div>
-      <div class="step-nav" hidden="">
-        <button class="next-btn">Próximo passo →</button>
-        <span class="progress">Passo <b>0</b> de 4</span>
-        <button class="restart" hidden="">↺ recomeçar</button>
+      <div class="step-nav">
+        <button class="next-btn" disabled="">✓ Concluído</button>
+        <span class="progress">Passo <b>4</b> de 4</span>
+        <button class="restart">↺ recomeçar</button>
       </div>
-    </div></div><div class="q-card reveal" style="--qc: #fbbf24;">
+    </div></div><div class="q-card reveal in" style="--qc: #fbbf24;">
     <div class="q-tag">Forças de resistência</div>
     <div class="q-text"><span class="q-num">Questão 2.</span> Uma pessoa desce uma ladeira inclinada de 30° em um carrinho de rolimã, com aceleração média de 1,5 m/s². A massa do conjunto é 60 kg. Sabendo que a descida foi impulsionada apenas pelo próprio peso, determine a intensidade média da resultante das forças de resistência.</div>
     <div class="q-data">sen 30° = 0,50 · cos 30° = 0,87 · g = 10 m/s²</div>
